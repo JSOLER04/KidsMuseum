@@ -1,56 +1,93 @@
-
-body {
-    font-family: Arial, sans-serif;
+/* Reset básico */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+    box-sizing: border-box;
+}
+
+/* Estilo del cuerpo */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #ffebcd;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #e0a458;
+}
+
+header h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5em;
     color: #333;
 }
 
-header {
-    background-color: #4CAF50;
-    padding: 20px;
-    text-align: center;
-    color: white;
-}
-
 nav ul {
-    list-style-type: none;
-    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 15px;
 }
 
 nav ul li a {
-    color: white;
     text-decoration: none;
+    color: #333;
+    font-weight: bold;
 }
 
-h2 {
-    color: #4CAF50;
+nav ul li a:hover {
+    color: #e0a458;
 }
 
+/* Estilos de las secciones */
 section {
-    padding: 20px;
-    margin: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    text-align: center;
 }
 
+section h2 {
+    font-size: 2em;
+    color: #e0a458;
+    margin-bottom: 20px;
+}
+
+section article {
+    margin-bottom: 20px;
+}
+
+section p {
+    margin-bottom: 10px;
+}
+
+/* Estilo del pie de página */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     position: relative;
     bottom: 0;
     width: 100%;
 }
 
 footer p {
-    margin: 5px;
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #e0a458;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
