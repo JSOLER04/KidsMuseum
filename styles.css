@@ -8,22 +8,22 @@
 /* Estilo del cuerpo */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f0f8ff;
+    background-color: #fafafa;
     color: #333;
     line-height: 1.6;
 }
 
 /* Estilo del encabezado */
 header {
-    background-color: #ffebcd;
-    padding: 20px;
+    background-color: #ffdab9;
+    padding: 15px;
     text-align: center;
-    border-bottom: 2px solid #e0a458;
+    border-bottom: 2px solid #f4a460;
 }
 
 header h1 {
     font-family: 'Raleway', sans-serif;
-    font-size: 2.5em;
+    font-size: 2em;
     color: #333;
 }
 
@@ -31,7 +31,6 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    padding: 10px 0;
 }
 
 nav ul li {
@@ -45,27 +44,61 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #e0a458;
+    color: #f4a460;
+}
+
+/* Banner Principal */
+.banner {
+    position: relative;
+    text-align: center;
+    color: #333;
+}
+
+.banner img {
+    width: 100%;
+    opacity: 0.8;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 218, 185, 0.8);
+    padding: 20px;
+    border-radius: 8px;
 }
 
 /* Estilos de las secciones */
-section {
+.seccion {
     padding: 40px;
     text-align: center;
 }
 
-section h2 {
+.seccion h2 {
     font-size: 2em;
-    color: #e0a458;
+    color: #f4a460;
     margin-bottom: 20px;
 }
 
-section article {
-    margin-bottom: 20px;
+.estrategias-content, .recursos-content, .faq-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-section p {
-    margin-bottom: 10px;
+.seccion article, .recursos-content div {
+    width: 250px;
+    margin: 10px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.seccion img {
+    width: 100%;
+    border-radius: 8px;
 }
 
 /* Estilo del pie de página */
@@ -74,9 +107,6 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
 }
 
 footer p {
@@ -84,10 +114,6 @@ footer p {
 }
 
 footer a {
-    color: #e0a458;
+    color: #f4a460;
     text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
 }
